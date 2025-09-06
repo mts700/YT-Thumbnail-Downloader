@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Thumbnail Downloader</title>
+    <meta name="description" content="Download high-quality YouTube video and Short thumbnails instantly. Free online tool to extract and save YouTube thumbnails in various resolutions." />
+    <meta name="keywords" content="youtube thumbnail downloader, youtube thumbnail grabber, youtube thumbnail extractor, download youtube thumbnail, get youtube thumbnail, youtube video thumbnail, youtube short thumbnail, high quality youtube thumbnail, free youtube thumbnail downloader, online youtube thumbnail tool, easy youtube thumbnail download, ZarCodeX" />
+    <meta name="author" content="Muhammad Abuzar (ZarCodeX)" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="icon" href="images/favicon.png" sizes="any" />
+    <link rel="icon" href="images/favicon.png" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="YouTube Thumbnail Downloader" />
+    <meta property="og:description" content="Download high-quality YouTube video and Short thumbnails instantly. Free online tool to extract and save YouTube thumbnails in various resolutions." />
+    <meta property="og:url" content="https://zarcodex.github.io/portfolio/" />
+    <meta property="og:site_name" content="YouTube Thumbnail Downloader" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/ZarCodeX/zarcodex.github.io/refs/heads/main/img/icons/ZarCodeX - Round.png" />
+    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/ZarCodeX/zarcodex.github.io/refs/heads/main/img/icons/ZarCodeX - Round.png" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YouTube Thumbnail Downloader" />
+    <meta name="twitter:description" content="Download high-quality YouTube video and Short thumbnails instantly. Free online tool to extract and save YouTube thumbnails in various resolutions." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/ZarCodeX/zarcodex.github.io/refs/heads/main/img/icons/ZarCodeX - Round.png" />
+    <meta name="twitter:site" content="@ZarCodeX" />
+    <meta name="twitter:creator" content="@ZarCodeX" />
+    <meta name="twitter:image:alt" content="YouTube Thumbnail Downloader" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+            </div>
+            <h1>YouTube Thumbnail Downloader</h1>
+            <p class="subtitle">Download high-quality thumbnails from any YouTube video or Short</p>
+        </header>
+        
+        <div class="card">
+            <div class="input-group">
+                <label for="youtube-url">Enter YouTube Video URL</label>
+                <input type="text" id="youtube-url" placeholder="Paste YouTube URL here (video or Short)">
+            </div>
+            
+            <div class="action-buttons">
+                <button id="get-thumbnails" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Get Thumbnails
+                </button>
+                <button id="clear-btn" class="btn btn-secondary">
+                    <i class="fas fa-times"></i> Clear
+                </button>
+            </div>
+            
+            <div id="error-message" class="error-message">
+                Please enter a valid YouTube URL
+            </div>
+        </div>
+        
+        <div class="loader" id="loader">
+            <div class="loader-spinner"></div>
+            <p>Extracting thumbnails...</p>
+        </div>
+        
+        <div class="thumbnails-container" id="thumbnails-container">
+            <h2>Available Thumbnails</h2>
+            <div class="thumbnails-grid" id="thumbnails-grid">
+                <!-- Thumbnail cards will be generated here -->
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to use this tool</h3>
+            <ol>
+                <li>Copy the URL of the YouTube video or Short you want thumbnails for</li>
+                <li>Paste the URL in the input field above</li>
+                <li>Click "Get Thumbnails" to extract available thumbnails</li>
+                <li>Download any thumbnail by clicking the download button</li>
+                <li>Use the copy button to get the direct image URL</li>
+            </ol>
+        </div>
+        
+        <footer>
+            <p>YouTube Thumbnail Downloader &copy; ZarCodeX</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
